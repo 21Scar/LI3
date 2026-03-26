@@ -1,0 +1,27 @@
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/main.c -o obj/main.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/voos.c -o obj/voos.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/voosCatalog.c -o obj/voosCatalog.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/aeroportos.c -o obj/aeroportos.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/aeroportosCatalog.c -o obj/aeroportosCatalog.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/reservas.c -o obj/reservas.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/reservasCatalog.c -o obj/reservasCatalog.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/passageiros.c -o obj/passageiros.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/passageirosCatalog.c -o obj/passageirosCatalog.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/aeronaves.c -o obj/aeronaves.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/aeronavesCatalog.c -o obj/aeronavesCatalog.o -Iinclude
+gcc -Wall -Wextra -Wno-unused-parameter -O3 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include  -c src/querys.c -o obj/querys.o -Iinclude
+src/querys.c: In function ‘listarTopAeronaves’:
+src/querys.c:145:1: error: ‘ss’ undeclared (first use in this function)
+  145 | ss
+      | ^~
+src/querys.c:145:1: note: each undeclared identifier is reported only once for each function it appears in
+src/querys.c:145:3: error: expected ‘;’ before ‘if’
+  145 | ss
+      |   ^
+      |   ;
+  146 |     if (!arguments) {
+      |     ~~
+src/querys.c:156:36: error: ‘top_n’ undeclared (first use in this function)
+  156 |     if(sscanf(arguments, "%d %s", &top_n, fabricante) == 2){
+      |                                    ^~~~~
+make: *** [Makefile:43: obj/querys.o] Erro 1

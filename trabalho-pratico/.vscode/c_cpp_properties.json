@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/opt/homebrew/Cellar/glib/2.86.0/include/glib-2.0",
+                "/opt/homebrew/Cellar/glib/2.86.0/lib/glib-2.0/include",
+                "/opt/homebrew/opt/gettext/include",
+                "/opt/homebrew/Cellar/pcre2/10.46/include",
+                "/Users/tiagobarros/2526-G54/trabalho-pratico/src",
+                "/Users/tiagobarros/2526-G54/trabalho-pratico/include"
+
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "/opt/homebrew/Cellar/glib/2.86.0/include/glib-2.0"
+                    
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
